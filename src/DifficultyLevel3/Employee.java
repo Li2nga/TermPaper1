@@ -1,7 +1,6 @@
-package Level1;
+package DifficultyLevel3;
 
 public class Employee {
-
     private int id;
     private static int counter = 1;
     private String fullName;
@@ -13,25 +12,6 @@ public class Employee {
         this.department = department;
         this.salary = salary;
         this.id = counter++;
-    }
-
-
-    public void setDepartment(int department) {
-        this.department = department;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", fullName='" + fullName + '\'' +
-                ", department='" + department + '\'' +
-                ", salary=" + salary +
-                '}';
     }
 
     public int getId() {
@@ -49,5 +29,21 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
-}
+    public void setDepartment(int department) {
+        this.department = department;
+    }
 
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", department='" + department + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+}
